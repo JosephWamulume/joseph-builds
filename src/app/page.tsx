@@ -95,10 +95,10 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">About Me</h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-gray-600 mb-6">
-              Hi there! I'm Joseph, a Software Developer at Zambia Centre for Accountancy Studies (ZCAS) where I focus on building critical software applications that enhance institutional operations. I specialize in developing RESTful APIs, student information systems, and web applications with a strong emphasis on security, integration, and automation.
+              Hi there! I&apos;m Joseph, a Software Developer at Zambia Centre for Accountancy Studies (ZCAS) where I focus on building critical software applications that enhance institutional operations. I specialize in developing RESTful APIs, student information systems, and web applications with a strong emphasis on security, integration, and automation.
             </p>
             <p className="text-gray-600 mb-6">
-              With a BSc Honors in Computing from the University of Greenwich and various computing diplomas from NCC Education, I've built a strong foundation in both front-end and back-end technologies. I'm also a proud member of the Information and Communication Technology Association of Zambia (ICTAZ).
+              With a BSc Honors in Computing from the University of Greenwich and various computing diplomas from NCC Education, I&apos;ve built a strong foundation in both front-end and back-end technologies. I&apos;m also a proud member of the Information and Communication Technology Association of Zambia (ICTAZ).
             </p>
             <p className="text-gray-600">
               My goal is to create secure, scalable solutions that optimize processes and enhance user experiences across multiple platforms.
@@ -260,7 +260,7 @@ export default function Home() {
               <div>
                 <h3 className="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
                 <p className="text-gray-600 mb-6">
-                  Feel free to reach out if you're looking for a developer, have a question, or just want to connect. You can also reach me at +260975944213 or +260962183068.
+                  Feel free to reach out if you&apos;re looking for a developer, have a question, or just want to connect. You can also reach me at +260975944213 or +260962183068.
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start">
