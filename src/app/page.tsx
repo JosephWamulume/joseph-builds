@@ -192,18 +192,30 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Add more project cards later */}
+            {/* Portfolio Website */}
             <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
-              <div className="h-48 bg-green-100 flex items-center justify-center">
-                <div className="text-green-800 font-medium">Project Preview</div>
+              <div className="h-48 overflow-hidden">
+                <Image
+                  src="/images/projects/portfolio-website.png"
+                  alt="Portfolio Website Preview"
+                  width={600}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">Coming Soon</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">Personal Portfolio Website</h3>
                 <p className="text-gray-600 mb-4">
-                  More exciting projects are in the works. Stay tuned for updates!
+                  Designed and developed a modern portfolio website to showcase my projects and professional experience using Next.js and Tailwind CSS.
                 </p>
                 <div className="flex space-x-2 mb-4">
-                  <span className="text-xs bg-gray-100 text-gray-800 px-2 py-1 rounded">Future Tech</span>
+                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded">Next.js</span>
+                  <span className="text-xs bg-sky-100 text-sky-800 px-2 py-1 rounded">Tailwind CSS</span>
+                  <span className="text-xs bg-violet-100 text-violet-800 px-2 py-1 rounded">TypeScript</span>
+                </div>
+                <div className="flex space-x-3">
+                  <a href="https://joseph-builds.vercel.app/" target="_blank" className="text-sm text-blue-600 hover:text-blue-800 transition">View Website</a>
+                  <a href="https://github.com/JosephWamulume/joseph-builds" target="_blank" className="text-sm text-blue-600 hover:text-blue-800 transition">GitHub Repo</a>
                 </div>
               </div>
             </div>
