@@ -1,6 +1,10 @@
+"use client";
+
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Home() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <div className="min-h-screen bg-white">
       {/* Header/Navigation */}
@@ -16,12 +20,31 @@ export default function Home() {
               <li><a href="#contact" className="text-gray-600 hover:text-blue-600 transition">Contact</a></li>
             </ul>
           </nav>
-          <button className="md:hidden text-gray-600">
+          <button 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
+            className="md:hidden text-gray-600"
+            aria-label="Toggle mobile menu"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
+        
+        {/* Mobile menu, show/hide based on menu state */}
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-gray-100 py-2">
+            <div className="container mx-auto px-4">
+              <ul className="space-y-3 py-2">
+                <li><a href="#about" onClick={() => setMobileMenuOpen(false)} className="block text-gray-600 hover:text-blue-600 transition py-1">About</a></li>
+                <li><a href="#skills" onClick={() => setMobileMenuOpen(false)} className="block text-gray-600 hover:text-blue-600 transition py-1">Skills</a></li>
+                <li><a href="#projects" onClick={() => setMobileMenuOpen(false)} className="block text-gray-600 hover:text-blue-600 transition py-1">Projects</a></li>
+                <li><a href="#experience" onClick={() => setMobileMenuOpen(false)} className="block text-gray-600 hover:text-blue-600 transition py-1">Experience</a></li>
+                <li><a href="#contact" onClick={() => setMobileMenuOpen(false)} className="block text-gray-600 hover:text-blue-600 transition py-1">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        )}
       </header>
 
       {/* Hero Section */}
